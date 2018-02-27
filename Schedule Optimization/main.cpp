@@ -118,7 +118,7 @@ int main(){
     
 
     
-    while(T>.01){
+    while(T>0){
         int u = 1; //under
         int count = 0;
         double Last_value;
@@ -126,7 +126,8 @@ int main(){
         
             array<int, 100> a;
             
-           // DISPLAYS ALL STUDENT INFORMATION INCLUDING ID, LAB, PREFERENCE  
+           // DISPLAYS ALL STUDENT INFORMATION INCLUDING ID, LAB, PREFERENCE
+            
             for(int i = 0; i < 100; i++){
                 prim_array.at(i).set_lab(i);
                 prim_array.at(i).set_utility();
@@ -166,7 +167,7 @@ int main(){
                 }
 //                continue;
             }
-
+ 
             else if (avg > averages[count -1]){
                 if(prob < .05){
                     cout<<"Skipped        PROB = "<<prob<<"  unlikely   "<< avg<<" > "<<averages[count-1]<<endl;
