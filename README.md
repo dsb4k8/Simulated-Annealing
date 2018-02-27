@@ -25,4 +25,4 @@ The last field's display on the far left depends on whether or not the given new
 
 If it was accept, It simply shows the current value of temperature T in the equation e^(-(s2-s1)/T).
 
-If it regected, it shows the attempted replacement score and the current best.
+If it was skipped, it shows the attempted replacement score and the current best.
