@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45F50B5920300B5B0046EBA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F50B5820300B5B0046EBA8 /* main.cpp */; };
+		45F50B682033489C0046EBA8 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45F50B662033489C0046EBA8 /* Student.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		45F50B5520300B5B0046EBA8 /* Schedule Optimization */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Schedule Optimization"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45F50B5820300B5B0046EBA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		45F50B6120301B100046EBA8 /* L1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = L1.txt; sourceTree = "<group>"; };
+		45F50B6220301B200046EBA8 /* L2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = L2.txt; sourceTree = "<group>"; };
+		45F50B662033489C0046EBA8 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		45F50B672033489C0046EBA8 /* Student.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Student.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +62,11 @@
 		45F50B5720300B5B0046EBA8 /* Schedule Optimization */ = {
 			isa = PBXGroup;
 			children = (
+				45F50B6220301B200046EBA8 /* L2.txt */,
+				45F50B6120301B100046EBA8 /* L1.txt */,
 				45F50B5820300B5B0046EBA8 /* main.cpp */,
+				45F50B662033489C0046EBA8 /* Student.cpp */,
+				45F50B672033489C0046EBA8 /* Student.hpp */,
 			);
 			path = "Schedule Optimization";
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45F50B5920300B5B0046EBA8 /* main.cpp in Sources */,
+				45F50B682033489C0046EBA8 /* Student.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +242,7 @@
 		45F50B5D20300B5B0046EBA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -240,6 +251,7 @@
 		45F50B5E20300B5B0046EBA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
