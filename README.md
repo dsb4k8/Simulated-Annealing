@@ -16,8 +16,13 @@ Logic:
 Every line represents the net disutility of 100 students caused by swapping 2 ind
 
 For each line: 
+
 I have included the most recently accepted utility score. If this score was ignored, it will simply read "Skipped".
+
 To the right of the accepted score or "Skipped" score, I display the retrospective probability of this score acceptance occuring.
+
 The last field's display on the far left depends on whether or not the given newly proposed score was accepted.
+
 If it was accept, It simply shows the current value of temperature T in the equation e^(-(s2-s1)/T).
+
 If it regected, it shows the attempted replacement score and the current best.
