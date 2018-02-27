@@ -13,7 +13,7 @@ Logic:
 
 # Understanding the Output
 
-Every line represents the net disutility of 100 students caused by swapping 2 ind
+Every line represents the net disutility of 100 students caused by swapping 2 indexes
 
 For each line: 
 
