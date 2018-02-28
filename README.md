@@ -13,7 +13,7 @@ Logic:
 
 # Understanding the Output
 
-Every line represents the net disutility of 100 students caused by swapping 2 indexes
+Each line represents the net disutility of 100 students caused by swapping 2 indexes
 
 For each line: 
 
@@ -23,6 +23,6 @@ To the right of the accepted score or "Skipped" score, I display the retrospecti
 
 The last field's display on the far left depends on whether or not the given newly proposed score was accepted.
 
-If it was accept, It simply shows the current value of temperature T in the equation e^(-(s2-s1)/T).
+If it was accept, it simply shows the current value of temperature T in the equation e^(-(s2-s1)/T).
 
 If it was skipped, it shows the attempted replacement score and the current best.
