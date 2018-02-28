@@ -1,9 +1,22 @@
 # Simulated-Annealing
-This problem is similar to the "Hospitals and Residents" problem.
+This problem is similar to the "Hospitals and Residents Problem" .
 
-This solves a lab designation problem such that the average disutility for a array of 100 students is minimized.
 
-This problem involves the incremental evolution of an array of 100 students. All students have listed out their lab preferences in order. By finding the average utility of an arbitrary solution and comparing it with the utility of a slightly altered second solution, the agent determines the likelihood that a given solution will be accepted.
+The goal of this program find the optimum configuration of lab assignments such that the average disutility for a array of 100 students is minimized. In otherwords, perform the most egalitarian lab assignments with considetration of 100 student's individual lab  preferences.
+
+This problem involves the incremental evolution of an array of 100 students. All students have listed their lab preferences in a string with their most preferred lab at index 0 and their least perferred lab at index 4. By finding the average utility of an arbitrary solution and comparing it with the utility of a slightly altered second solution, the agent determines the likelihood that a given solution will be accepted.
+
+Utility is determined by taking the proposed lab assignment and finding it's position in the preferences string provided by the student. This value is then squared to give the individual utility of the assignment. Utility scores closer to 0 are preferred to higher ones. Squaring the result ensures that assigning 2 people to their second choice of labs is evaluated as a better configuration than assigning one student to their first choice of lab at the expense of assigning another student to their third choice
+
+To illustrate :
+
+2+2 == 1+3 
+
+But 
+
+(2^2 + 2^2) < (1^2 + 3^2) 
+
+
 
 Logic:
 	
