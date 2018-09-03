@@ -1,10 +1,10 @@
 # Simulated-Annealing
 
-##Definitions
+## Definitions
 Simulated annealing is a probabilistic technique for approxamating the global optimum of a giben function. Specificaly, it is a metaheuristic to approxiamte global oprimization in a large search space. 
 This problem is similar to the "Hospitals and Residents Problem" .
 
-##Application
+## Application
 The goal of this program find the optimum configuration of lab assignments such that the average disutility for a array of 100 students is minimized. In otherwords, perform the most egalitarian lab assignments with considetration of 100 student's individual lab  preferences.
 
 This problem involves the incremental evolution of an array of 100 students. All students have listed their lab preferences in a string with their most preferred lab at index 0 and their least perferred lab at index 4. By finding the average utility of an arbitrary solution and comparing it with the utility of a slightly altered second solution, the agent determines the likelihood that a given solution will be accepted.
@@ -21,7 +21,7 @@ But
 
 
 
-##Logic
+## Logic
 	
 -As the value of T drops, the agent becomes more restrictive of which maladaptive new solutions will be accepted.
 
