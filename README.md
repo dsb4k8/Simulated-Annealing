@@ -6,8 +6,14 @@ In this application, I applied this concept to solve a problem similar to the "H
 
 ## Application
 The goal of this program find the optimum configuration of lab assignments such that the average disutility for a array of 100 students is minimized. In otherwords, perform the most egalitarian lab assignments with considetration of 100 student's individual lab preferences.
+###### To Illustrate The Setup:
 
-This problem involves the incremental evolution of an array of 100 students. All students have listed their lab preferences in a string with their most preferred lab at index 0 and their least perferred lab at index 4. By finding the average utility of an arbitrary solution and comparing it with the utility of a slightly altered second solution, the agent determines the likelihood that a given solution will be accepted.
+	Sample_Student_001 = [Lab a, Lab c, Lab e, Lab b, Lab d]
+		//SS001's #1 lab choice is "Lab a"
+		//SS001's #5 lab choice is "Lab d"
+	Assignment_Array = [SS000, SS001, SS002, ..., SS099]
+		
+This problem involves the incremental swapping of students in the Assignment Array. All students have listed their lab preferences in a string with their most preferred lab at index 0 and their least perferred lab at index 4. By finding the average utility of an arbitrary solution and comparing it with the utility of a slightly altered second solution, the agent determines the likelihood that a given solution will be accepted.
 
 Utility is determined by taking the proposed lab assignment and finding it's position in the preferences string provided by the student. This value is then squared to give the individual utility of the assignment. Utility scores closer to 0 are preferred to higher ones. 
 ### So wait... Why take the sum of squares?
