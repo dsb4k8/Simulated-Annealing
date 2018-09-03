@@ -27,7 +27,7 @@ But
 
 -With enough time, the probability of acceptance of a less optimal solution approaches asymptotically towards 0.
 
-# Understanding the Output
+## Understanding the Output
 
 Each line represents the net disutility of 100 students caused by swapping 2 indexes
 
