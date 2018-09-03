@@ -9,7 +9,9 @@ The goal of this program find the optimum configuration of lab assignments such 
 
 This problem involves the incremental evolution of an array of 100 students. All students have listed their lab preferences in a string with their most preferred lab at index 0 and their least perferred lab at index 4. By finding the average utility of an arbitrary solution and comparing it with the utility of a slightly altered second solution, the agent determines the likelihood that a given solution will be accepted.
 
-Utility is determined by taking the proposed lab assignment and finding it's position in the preferences string provided by the student. This value is then squared to give the individual utility of the assignment. Utility scores closer to 0 are preferred to higher ones. Squaring the result ensures that assigning 2 people to their second choice of labs is evaluated as a better configuration than assigning one student to their first choice of lab at the expense of assigning another student to their third choice
+Utility is determined by taking the proposed lab assignment and finding it's position in the preferences string provided by the student. This value is then squared to give the individual utility of the assignment. Utility scores closer to 0 are preferred to higher ones. 
+### So wait... Why take the sum of squares?
+Squaring the result ensures that assigning 2 people to their second choice of labs is evaluated as a better configuration than assigning one student to their first choice of lab at the expense of assigning another student to their third choice.
 
 To illustrate :
 
